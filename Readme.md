@@ -1,2 +1,2 @@
-Git ignore file generator
-[https://mrkandreev.name/snippets/gitignore-generator/#Node]
+Git ignores file generator
+https://mrkandreev.name/snippets/gitignore-generator/#Node
