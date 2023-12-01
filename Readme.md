@@ -1,5 +1,2 @@
-
-
-# Git ignore generator 
-# https://mrkandreev.name/snippets/gitignore-generator/#Node
-
+Git ignore file generator
+[https://mrkandreev.name/snippets/gitignore-generator/#Node]
