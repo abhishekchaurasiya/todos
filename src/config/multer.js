@@ -1,4 +1,5 @@
 const multer = require('multer');
+const { fieldsname } = require('../utils/Collections_Constant');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -8,9 +9,11 @@ const storage = multer.diskStorage({
 
         cb(null, file.originalname)
     }
-})
+});
 
-exports.upload = multer({
+let upload = multer({
     storage,
 });
+
+module.exports = { upload };
 

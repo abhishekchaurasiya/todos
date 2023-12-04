@@ -1,7 +1,7 @@
 const mongose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const { User, Todo } = require("../utils/CollectionsName");
+const { User, Todo } = require("../utils/Collections_Constant");
 const { Schema } = mongose;
 
 const userSchema = new Schema({
@@ -25,6 +25,12 @@ const userSchema = new Schema({
         unique: true,
         lowecase: true
     },
+    phone: {
+        type: String,
+        trim: true,
+        unique: true,
+        lowecase: true
+    },
     avatar: {
         type: String, // cloudinary url
         required: true,
@@ -36,6 +42,7 @@ const userSchema = new Schema({
         type: String,
         trim: true,
         required: [true, 'Password is required'],
+        required:true
     },
     todos: [
         {
