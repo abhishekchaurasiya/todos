@@ -1,7 +1,7 @@
 
 // Collections name
-const User = "User";
-const Todo = "Todo";
+const Users = "User";
+const Todos = "Todo";
 const SubTodo = "SubTodo";
 
 // Upload fileds name 
@@ -14,8 +14,8 @@ const fieldsname = {
 }
 
 module.exports = {
-    User,
-    Todo,
+    Users,
+    Todos,
     SubTodo,
     fieldsname
 }

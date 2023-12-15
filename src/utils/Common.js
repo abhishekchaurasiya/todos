@@ -39,6 +39,9 @@ function paramsValidate(paramVal) {
     return true;
 }
 
+const textUpperCase = (x) => x.toUpperCase();
+
+
 module.exports = {
     isValidEmail,
     covertObjectId,
@@ -46,4 +49,5 @@ module.exports = {
     validatePhoneNumber,
     objectId,
     paramsValidate,
+    textUpperCase
 }

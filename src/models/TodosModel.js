@@ -1,5 +1,5 @@
 const mongose = require("mongoose");
-const { Todo, User, SubTodo } = require("../utils/CollectionsName");
+const { Todos, Users, SubTodo } = require("../utils/Collections_Constant");
 const { Schema } = mongose;
 
 const todosSchema = new Schema({
@@ -19,7 +19,7 @@ const todosSchema = new Schema({
     },
     createdBy: {
         type: mongose.Schema.Types.ObjectId,
-        ref: User
+        ref: Users
     },
     subTodos: [
         {
@@ -30,4 +30,5 @@ const todosSchema = new Schema({
 }, { timestamps: true, id: false });
 
 
-exports.Todo = mongose.model(Todo, todosSchema);
+const Todo = mongose.model(Todos, todosSchema);
+module.exports = Todo;
